@@ -1,21 +1,74 @@
 <header class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
     <nav class="flex justify-between items-center w-full h-24 px-12 py-2">
-        <div class="w-1/2 h-full flex items-center">
+        <div class="w-1/2 h-full hidden md:flex items-center">
             <div class="h-16 w-24">
                 <img src="../../assets/photos/flag.png" class="h-full w-full" alt="">
             </div>
         </div>
-        
-        <div id="burgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <div class="w-full hidden md:flex justify-around gap-8 font-bold text-black">
+            <a href="" class="w-auto">მთავარი</a>
+            <a href="" class="w-auto">წყაროები</a>
+            <a href="" class="w-auto">ჩვენს შესახებ</a>
         </div>
 
-        <div class="w-1/2 hidden  lg:flex justify-center space-x-16 font-bold text-black">
-            <a href="">მთავარი</a>
-            <a href="">წყაროები</a>
-            <a href="">ჩვენს შესახებ</a>
+        <!-- Responsive Web -->
+
+        <div class="hidden justify-between items-center w-full h-24 px-12 py-2 lg:hidden">
+
+            <div class="flex space-x-6 md:hidden justify-self-end">
+
+                <!--gasaketebelia!-->
+
+                <button
+                  class="flex flex-col hamburger lg:hidden focus:outline-none"
+                  id="burgerMenuButton"
+                  
+                  (click)='classChange(newClass)'
+                >
+                  <span class="hamburger-top"></span>
+                  <span class="hamburger-mid"></span>
+                  <span class="hamburger-btm"></span>
+                </button>
+                <!--Menu-->
+      
+                <div
+                  id="burgerMenu"
+                  class="origin-top z-50 scale-0 duration-300 absolute h-95 flex flex-col items-center self-end py-8 mt-10 text-center space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 top-16 drop-shadow-md"
+                >
+                  <a
+                    href="#"
+                    class="page-link active border-b-2 border-violet-700 hover:text-activeColor hover:duration-250 duration-250 border-solid"
+                    >მთავარი</a
+                  >
+                  <a
+                    href="#"
+                    class="page-link border-b-2 border-violet-700 hover:text-activeColor hover:duration-250 duration-250 border-solid"
+                    >კატეგორიები</a
+                  >
+                  <a
+                    href="#"
+                    class="page-link border-b-2 border-violet-700 hover:text-activeColor hover:duration-250 duration-250 border-solid"
+                    >გვერდები</a
+                  >
+                  <div
+                    class="flex justify-between items-center gap-6 sm:gap-64 text-center sm:flex-row flex-col"
+                  >
+                    <a
+                      href="#"
+                      class="button-transition relative z-10 overflow-hidden px-7 py-4 text-lg bg-buttonColor border-buttonColor border-solid border duration-250 hover:duration-250 hover:transition-all text-white"
+                      >რეგისტრაცია</a
+                    >
+                    <a
+                      href="#"
+                      class="button-transition relative z-10 overflow-hidden px-7 py-4 text-lg bg-buttonColor border-buttonColor border-solid border duration-250 hover:duration-250 hover:transition-all text-white"
+                      >შესვლა</a
+                    >
+                  </div>
+                </div>
+            </div>
+
         </div>
+        
     </nav>
 </header>
