@@ -8,8 +8,7 @@ import { OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  newClass: boolean = false;
+  isActive: boolean = false;
 
   constructor(){
 
@@ -17,14 +16,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     
-  } 
-  classChange(newClass: boolean): void{
-    if(newClass == false){
-      newClass=true;
-    }else{
-      newClass=false;
-    }
-    
   }
 
+
+  toggleActive() {
+    this.isActive = !this.isActive;
+  }
 }
