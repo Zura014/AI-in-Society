@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
-
+import { faBullseye } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +9,7 @@ import { OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isActive: boolean = false;
+  faBullseye = faBullseye;
 
   constructor(){
 
