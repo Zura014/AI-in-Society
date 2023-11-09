@@ -8,7 +8,7 @@ import { faBullseye } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  isActive: boolean = false;
+  isClicked: boolean = false;
   faBullseye = faBullseye;
 
   constructor(){
@@ -19,8 +19,7 @@ export class HeaderComponent implements OnInit {
     
   }
 
-
-  toggleActive() {
-    this.isActive = !this.isActive;
+  toggle() {
+    this.isClicked = !this.isClicked;
   }
 }

@@ -1,83 +1,39 @@
 <header
-  class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl md:bg-transparent bg-slate-200"
->
-  <nav class="flex justify-between items-center w-full h-24 px-12 py-2">
-    <div class="w-1/2 h-full hidden md:flex items-center">
-      <div class="h-16 w-24">
-        <a href="#">
-          <img src="../../assets/photos/flag.png" class="h-full w-full" />
-        </a>
+  class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl lg:bg-transparent bg-blue-600">
+  <nav class="w-full h-32 flex justify-between items-center px-12 py-4 relative">
+
+    <div class="flex justify-center items-center">
+      <div class="px-8">
+        <img src="../../assets/photos/flag.png" class="w-24 h-18">
       </div>
     </div>
-
-    <div
-      class="w-full hidden md:flex justify-around gap-8 font-bold text-black"
+    <div class="hidden md:flex justify-center items-center lg:text-black text-white">
+      <ul class="px-8 md:px-16 lg:px-28 flex justify-between items-center md:gap-x-16 lg:gap-x-32">
+        <li>{{ 'home' | titlecase }}</li>
+        <li>{{ 'source' | titlecase }}</li>
+        <li>{{ 'about us' | titlecase }}</li>
+      </ul>
+    </div>
+    <div 
+    class="hamburger flex md:hidden"
+    (click)="toggle()"
+    [ngClass]="{'open': isClicked}"
     >
-      <a href="" class="w-auto">მთავარი</a>
-      <a href="" class="w-auto">წყაროები</a>
-      <a href="" class="w-auto">ჩვენს შესახებ</a>
+        <span class="hamburger-top"></span>
+        <span class="hamburger-mid"></span>
+        <span class="hamburger-btm"></span>
     </div>
-
-    <!-- Responsive Web -->
-
-    <div
-      class="flex relative justify-between items-center w-full h-24 px-12 py-2 md:hidden"
+    <div 
+    class="scale-y-1 bg-white origin-top duration-300 absolute  top-32 w-[90%] left-1/2 -translate-x-1/2 text-center drop-shadow-md"
+    [ngClass]="{'scale-y-0': !isClicked}"
     >
-      <div class="flex items-center justify-center">
-        
-        <div class="h-16 w-24">
-          <a href="#">
-            <img src="../../assets/photos/flag.png" class="h-full w-full" />
-          </a>
-        </div>
-
-      </div>
-
-
-      <div class="flex items-center justify-center">
-        <p class="opacity-30">
-          <strong><h1>GK STUDIO</h1></strong>
-        </p>
-        <fa-icon [icon]="faBullseye" class="text-[rgb(255,0,0)] opacity-30 text-[24px] ml-1"></fa-icon>
-      </div>
-      
-      <div class="flex space-x-6 md:hidden justify-self-end">
-        <button
-          class="flex flex-col hamburger md:hidden focus:outline-none"
-          #burgerMenuButton
-          [ngClass]="{ open: isActive }"
-          (click)="toggleActive()"
-        >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-mid"></span>
-          <span class="hamburger-btm"></span>
-        </button>
-      </div>
-
-      <!--Menu-->
-
-      <div
-        id="burgerMenu"
-        class="origin-top z-50 scale-0 duration-300 absolute h-95 flex flex-col items-center self-end py-8 mt-10 text-center space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 top-16 drop-shadow-md"
-        [ngClass]="{ 'scale-1': burgerMenuButton.classList.contains('open') }"
-        [ngClass]="{ 'scale-0': !burgerMenuButton.classList.contains('open') }"
-      >
-        <a
-          href="#"
-          class="page-link active border-b-2 border-slate-200 hover:text-activeColor hover:duration-250 duration-250 border-solid"
-          >მთავარი</a
-        >
-        <a
-          href="#"
-          class="page-link border-b-2 border-slate-200 hover:text-activeColor hover:duration-250 duration-250 border-solid"
-          >წყაროები</a
-        >
-        <a
-          href="#"
-          class="page-link border-b-2 border-slate-200 hover:text-activeColor hover:duration-250 duration-250 border-solid"
-          >ჩვენს შესახებ</a
-        >
-      </div>
+        <ul class="text-xl px-8 py-4 md:px-16 lg:px-28 flex flex-col justify-between items-center gap-4">
+          <li class="border-b-2 w-full py-1 border-blue-200">{{ 'home' | titlecase }}</li>
+          <li class="border-b-2 w-full py-1 border-blue-200">{{ 'source' | titlecase }}</li>
+          <li class="border-b-2 w-full py-1 border-blue-200">{{ 'about us' | titlecase }}</li>
+        </ul>
     </div>
+
   </nav>
+
 </header>
