@@ -30,6 +30,7 @@
   .open {
     transform: rotate(90deg);
     transform: translateY(0px);
+    transform: scale(125%);
   }
   
   .open .hamburger-top {

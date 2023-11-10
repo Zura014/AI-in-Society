@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  image = 'src/assets/images/ai-photo.jpg'
+
 }
