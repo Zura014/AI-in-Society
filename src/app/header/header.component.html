@@ -1,6 +1,6 @@
 <header
   class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl lg:bg-transparent bg-blue-600">
-  <nav class="w-full h-32 flex justify-between items-center px-12 py-4 relative">
+  <nav class="w-full flex justify-between items-center px-12 py-4 relative">
 
     <div class="flex justify-center items-center">
       <div class=" sm:px-8">
@@ -11,9 +11,9 @@
     </div>
     <div class="hidden md:flex justify-center items-center lg:text-black text-white">
       <ul class="px-8 md:px-16 lg:px-28 flex justify-between items-center md:gap-x-16 lg:gap-x-32">
-        <li>{{ 'home' | titlecase }}</li>
-        <li>{{ 'source' | titlecase }}</li>
-        <li>{{ 'about us' | titlecase }}</li>
+        <li>{{ 'მთავარი'}}</li>
+        <li>{{ 'წყაროები'}}</li>
+        <li>{{ 'ჩვენს შესახებ'}}</li>
       </ul>
     </div>
     <div 
@@ -29,10 +29,10 @@
     class="scale-y-1 bg-white origin-top duration-300 absolute  top-32 w-[90%] left-1/2 -translate-x-1/2 text-center drop-shadow-md"
     [ngClass]="{'scale-y-0': !isClicked}"
     >
-        <ul class="text-xl px-8 py-4 md:px-16 lg:px-28 flex flex-col justify-between items-center gap-4">
-          <li class="border-b-2 w-full py-1 border-blue-200">{{ 'home' | titlecase }}</li>
-          <li class="border-b-2 w-full py-1 border-blue-200">{{ 'source' | titlecase }}</li>
-          <li class="border-b-2 w-full py-1 border-blue-200">{{ 'about us' | titlecase }}</li>
+        <ul class="text-xl font-bold px-8 py-4 md:px-16 lg:px-28 flex flex-col justify-between items-center gap-4">
+          <li class="border-b-2 w-full py-1 border-blue-400">{{ 'მთავარი'}}</li>
+          <li class="border-b-2 w-full py-1 border-blue-400">{{ 'წყაროები'}}</li>
+          <li class="border-b-2 w-full py-1 border-blue-400">{{ 'ჩვენს შესახებ'}}</li>
         </ul>
     </div>
 
