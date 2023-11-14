@@ -9,7 +9,6 @@ import { faBullseye } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent implements OnInit {
   isClicked: boolean = false;
-  faBullseye = faBullseye;
 
   constructor(){
 

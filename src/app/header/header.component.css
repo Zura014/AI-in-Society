@@ -1,46 +1,81 @@
-  .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
-  }
-  
-  .hamburger-top,
-  .hamburger-mid,
-  .hamburger-btm {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background: #FFF;
-    transform: rotate(0);
-    transition: all 0.5s;
-  }
-  
-  .hamburger-mid {
-    transform: translateY(7px);
-  }
-  
-  .hamburger-btm {
-    transform: translateY(14px);
-  }
-  
-  .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
-    transform: scale(125%);
-  }
-  
-  .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translate(6px);
-  }
-  
-  .open .hamburger-mid {
-    display: none;
-  }
-  
-  .open .hamburger-btm {
-    transform: rotate(-45deg) translateY(6px) translate(-6px);
-  }
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-mid,
+.hamburger-btm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-mid {
+  transform: translateY(7px);
+}
+
+.hamburger-btm {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  transform: scale(125%);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-mid {
+  display: none;
+}
+
+.open .hamburger-btm {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.link {
+  text-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  transition: all 0.5s ease-in-out;
+}
+.link:hover {
+  text-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.575),
+    0 0 25px rgba(0, 255, 255, 0.575);
+  transition: all 0.5s ease-in-out;
+}
+
+.active:hover {
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.575),
+    0 0 25px rgba(0, 255, 255, 0.575), 0 0 50px rgba(0, 255, 255, 0.575),
+    0 0 100px rgba(0, 255, 255, 0.575), 0 0 150px rgba(0, 255, 255, 0.575);
+  transition: all 0.5s ease-in-out;
+}
+
+.li-shadow {
+  box-shadow: 0 0 0 cyan, 0 0 5px cyan;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.li-shadow:hover {
+  box-shadow: 0 0 1px cyan, 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan,
+    0 0 40px cyan;
+  transition: all 0.5s ease-in-out;
+
+}

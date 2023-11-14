@@ -1,0 +1,7 @@
+.hero{
+    background-image: url(../../assets/images/ai-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100%;
+}
