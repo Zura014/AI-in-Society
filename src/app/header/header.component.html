@@ -28,8 +28,8 @@
     </div>
     <div
       class="hamburger flex scale-125 md:hidden"
-      (click)="toggle()"
-      [ngClass]="{ open: isClicked }"
+      (click)="toggleBM()"
+      [ngClass]="{ open: isClickedBM }"
     >
       <span class="hamburger-top"></span>
       <span class="hamburger-mid"></span>
@@ -37,7 +37,7 @@
     </div>
     <div
       class="scale-y-1 bg-[#01102d] z-20 origin-top text-white duration-300 absolute top-32 w-[90%] left-1/2 -translate-x-1/2 text-center drop-shadow-md"
-      [ngClass]="{ 'scale-y-0': !isClicked }"
+      [ngClass]="{ 'scale-y-0': !isClickedBM }"
     >
       <ul
         class="text-xl font-bold px-8 py-4 md:px-16 lg:px-28 flex flex-col justify-between items-center gap-4"
