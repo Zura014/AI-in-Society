@@ -67,15 +67,3 @@
     0 0 100px rgba(0, 255, 255, 0.575), 0 0 150px rgba(0, 255, 255, 0.575);
   transition: all 0.5s ease-in-out;
 }
-
-.li-shadow {
-  box-shadow: 0 0 0 cyan, 0 0 5px cyan;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-.li-shadow:hover {
-  box-shadow: 0 0 1px cyan, 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan,
-    0 0 40px cyan;
-  transition: all 0.5s ease-in-out;
-
-}
