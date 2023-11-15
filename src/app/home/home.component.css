@@ -1,11 +1,10 @@
 .bg-div{
     background-image: url(../../assets/images/ai-photo.jpg);
     background-repeat: no-repeat;
-    background-position:bottom right;
+    background-position: bottom right;
     height: 100%;
     position: relative;
 }
-
 
 .bg-div::after{
     content: '';
