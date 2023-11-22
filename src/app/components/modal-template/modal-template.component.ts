@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 
 @Component({
@@ -7,10 +7,17 @@ import { Component, Input } from '@angular/core';
   styleUrl: './modal-template.component.css'
 })
 export class ModalTemplateComponent {
-  
-  @Input() isClickedModal: boolean = true;
 
-  @Input() toggleModal(){
-    this.isClickedModal =!this.isClickedModal;
+  // Inputting variable from home component
+  
+  @Input() isHiddenCApplied = false || true;
+
+  // Emitting events for modals
+
+  @Output() hideEl = new EventEmitter<void>();
+
+  btnHideEl(): void{
+      this.hideEl.emit();
   }
+
 }

@@ -35,7 +35,7 @@
                     <h1>Creation Of AI</h1>
                 </div>
                 <div class="text-md xs:text-lg sm:text-xl xl:text-2xl font-bold">
-                    <button type="button" (click)="toggleModal()"
+                    <button type="button" (click)="applyHClass()"
                         class="px-8 py-4 rounded-lg hover:border-[#01102d] hover:bg-cyan-300 hover:text-[#01102d] duration-500 border-solid li-shadow text-cyan-300 bg-[#01102d]">
                         Click To See Info
                     </button>
@@ -47,7 +47,7 @@
                     <h1>Purpose of AI</h1>
                 </div>
                 <div class="text-md xs:text-lg sm:text-xl xl:text-2xl font-bold">
-                    <button type="button" (click)="toggleModal()"
+                    <button type="button" (click)="applyHClass()"
                         class="px-8 py-4 rounded-lg hover:border-[#01102d] hover:bg-cyan-300 hover:text-[#01102d] duration-500 border-solid li-shadow text-cyan-300 bg-[#01102d]">
                         Click To See Info
                     </button>
@@ -57,7 +57,7 @@
     </div>
     <!-- Modals -->
 
-    <app-modal-template [isClickedModal]="isClickedModal" [toggleModal]="toggleModal" [ngClass]="{'hidden': isClickedModal}"></app-modal-template>
-    <app-modal-template [isClickedModal]="isClickedModal" [toggleModal]="toggleModal" [ngClass]="{'hidden': isClickedModal}"></app-modal-template>
+    <app-modal-template (hideEl)="applyHClass()" [ngClass]="{'hidden': !isHiddenCApplied}"></app-modal-template>
+    <app-modal-template (hideEl)="applyHClass()" [ngClass]="{'hidden': !isHiddenCApplied}"></app-modal-template>
     
 </section>

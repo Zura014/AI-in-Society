@@ -5,9 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-  isClickedModal: boolean = true;
-  toggleModal(){
-    this.isClickedModal =!this.isClickedModal;
+export class HomeComponent {  
+
+////////////////////////////////////////////////////////////////
+  //modal reciever variables
+
+  isHiddenCApplied = false;
+
+  applyHClass(){
+    this.isHiddenCApplied = !this.isHiddenCApplied;
   }
+////////////////////////////////////////////////////////////////
+
+
 }
