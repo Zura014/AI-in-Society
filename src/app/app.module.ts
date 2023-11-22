@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/pages/home/home.component';
 import { SourcesComponent } from './components/pages/sources/sources.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
+import { ModalTemplateComponent } from './components/modal-template/modal-template.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AboutUsComponent } from './components/pages/about-us/about-us.component
     HeaderComponent,
     HomeComponent,
     SourcesComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ModalTemplateComponent
   ],
   imports: [
     BrowserModule,

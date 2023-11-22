@@ -7,12 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   isClickedModal: boolean = true;
-  isClickedModal2: boolean = true;
-
   toggleModal(){
     this.isClickedModal =!this.isClickedModal;
-  }
-  toggleModal2(){
-    this.isClickedModal2 =!this.isClickedModal2;
   }
 }
