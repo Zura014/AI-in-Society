@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/pages/home/home.component';
 import { SourcesComponent } from './components/pages/sources/sources.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
-import { ModalTemplateComponent } from './components/modal-template/modal-template.component';
+import { ModalTemplateComponent } from './components/components/modal-template/modal-template.component';
 
 @NgModule({
   declarations: [
