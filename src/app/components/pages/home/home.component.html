@@ -4,7 +4,7 @@
             class="mx-auto flex justify-center items-start lg:space-y-20 h-[850px] xs:h-[700px] sm:h-[700px] md:h-[500px] xl:h-[600px] max-w-screen-full sm:max-w-screen-full md:max-w-screen-lg lg:max-w-screen-xl">
             <div
                 class="flex flex-col md:flex-row gap-0 justify-center md:gap-5 items-center w-full bg-transparent py-8 lg:py-20">
-                <div class="w-full md:w-1/2 px-4 sm:px-12 text-white md:pr-0 lg:pl-20 py-6 md:text-start text-center">
+                <div class="w-full md:w-1/2 px-4 sm:px-12 text-cyan-100 md:pr-0 lg:pl-20 py-6 md:text-start text-center">
                     <h1 class="text-5xl lg:text-6xl xl:text-7xl pb-4">Info about AI</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
@@ -29,35 +29,8 @@
     <div class="mx-auto max-w-screen-full md:max-w-screen-lg lg:max-w-screen-xl">
         <div class="px-4 sm:px-12 gap-y-8 py-20 flex flex-col md:flex-row justify-between md:gap-x-20 lg:gap-x-40">
             <!-- Buttons -->
-            <div
-                class="li-shadow rounded-xl text-cyan-300 bg-[#01102d] h-[350px] sm:h-[450px] flex flex-col items-center justify-between py-24 sm:py-32 w-full sm:w-11/12 md:w-1/2 lg:w-1/3 mx-auto text-center">
-                <div class="text-xl sm:text-2xl xl:text-3xl font-bold">
-                    <h1>Creation Of AI</h1>
-                </div>
-                <div class="text-md xs:text-lg sm:text-xl xl:text-2xl font-bold">
-                    <button type="button" (click)="applyHClass()"
-                        class="px-8 py-4 rounded-lg hover:border-[#01102d] hover:bg-cyan-300 hover:text-[#01102d] duration-500 border-solid li-shadow text-cyan-300 bg-[#01102d]">
-                        Click To See Info
-                    </button>
-                </div>
-            </div>
-            <div
-                class="sm:h-[450px] h-[350px] flex flex-col li-shadow items-center rounded-xl justify-between py-24 sm:py-32 w-full sm:w-11/12 md:w-1/2 lg:w-1/3 mx-auto text-cyan-300 bg-[#01102d] text-center">
-                <div class="text-xl sm:text-2xl xl:text-3xl font-bold">
-                    <h1>Purpose of AI</h1>
-                </div>
-                <div class="text-md xs:text-lg sm:text-xl xl:text-2xl font-bold">
-                    <button type="button" (click)="applyHClass()"
-                        class="px-8 py-4 rounded-lg hover:border-[#01102d] hover:bg-cyan-300 hover:text-[#01102d] duration-500 border-solid li-shadow text-cyan-300 bg-[#01102d]">
-                        Click To See Info
-                    </button>
-                </div>
-            </div>
+            <app-cards *ngFor="let card of cards" [card]="card"></app-cards>
         </div>
     </div>
-    <!-- Modals -->
 
-    <app-modal-template (hideEl)="applyHClass()" [ngClass]="{'hidden': !isHiddenCApplied}"></app-modal-template>
-    <app-modal-template (hideEl)="applyHClass()" [ngClass]="{'hidden': !isHiddenCApplied}"></app-modal-template>
-    
 </section>

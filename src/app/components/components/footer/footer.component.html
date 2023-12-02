@@ -1,0 +1,39 @@
+<footer
+    class=" border-t-[0.25px] border-t-[#05ffff] mx-auto max-w-screen-full bg-[#010c22]">
+    <div class="py-12 xl:px-48 flex md:flex-row flex-col gap-y-12 justify-between">
+        <div class="flex justify-center items-center">
+            <div class="sm:px-8">
+                <a href="#" routerLink="/about-us" class="">
+                    <img src="../../assets/images/flag.png" class=" rounded-lg pointer li-shadow border w-24 h-18" />
+                </a>
+            </div>
+        </div>
+        
+        <div class="flex flex-col px-4 sm:px-12 lg:px-18 md:items-start justify-start">
+            <div class="text-cyan-100">
+                <h1 class="text-2xl pb-2 border-b border-cyan-300">პროექტის ავტორები:</h1>
+                <ul class="pt-4">
+                    <li class="authors-widget" *ngFor="let author of authors">{{ author }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col px-4 sm:px-12 lg:px-18 md:items-start justify-start">
+            <div class="text-cyan-100">
+                <h1 class="text-2xl pb-2 border-b border-cyan-300">გვერდები:</h1>
+                <ul class="pt-4">
+                    <li class="li-widget"><a href="#" routerLink="/home">მთავარი</a></li>
+                    <li class="li-widget"><a href="#" routerLink="/sources">წყაროები</a></li>
+                    <li class="li-widget"><a href="#" routerLink="/about-us">ჩვენს შესახებ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center mx-auto border-t-[0.25px] border-t-[#05ffff] text-cyan-100">
+        <div class="flex justify-center flex-col">
+            <p class="px-12 pt-1 text-center">გმადლობთ ყურადღებისთვის</p>
+            <span class="flex justify-center pb-4 h-9"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Eo_circle_cyan_heart.svg" /></span>
+        </div>
+        
+            
+    </div>
+</footer>

@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ai-in-society';
+  authors: string[] = [
+    'ნიკა ბუკია',
+    'ნიკოლოზ ფირანაშვილი',
+    'გიორგი დევიძე',
+    'მათე კუდაშვილი',
+    'მიქიაშვილი ილია',
+    'ზურაბ გაგნიძე',
+    'გუგა მუჩიაშვილი'
+  ];
 }

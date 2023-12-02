@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
+import { Card } from '../../components/cards/cardTemplate/Card';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
-export class HomeComponent {  
+export class HomeComponent {
 
-////////////////////////////////////////////////////////////////
-  //modal reciever/emitter variables
-
-  isHiddenCApplied = false;
-
-  applyHClass(){
-    this.isHiddenCApplied = !this.isHiddenCApplied;
-  }
-////////////////////////////////////////////////////////////////
-
-
+  cards: Card[] = [
+    {
+      topic: 'ხელოვნური ინტელექტის შექმნა',
+      info: 'მიუხედავად იმისა, რომ ხელოვნური ინტელექტის კონცეფციას უძველესი ფესვები აქვს მითოლოგიასა და ფოლკლორში, ხელოვნური ინტელექტის, როგორც კვლევის სფეროს ფორმალური წარმოშობა ხშირად ალან ტურინგის მუშაობას მიეკუთვნება. ტურინგმა, ბრიტანელმა მათემატიკოსმა და კომპიუტერულმა მეცნიერმა, 1936 წელს შემოგვთავაზა თეორიული გამოთვლითი მანქანის იდეა, რომელიც ახლა ცნობილია როგორც ტურინგის მანქანა, რომელმაც საფუძველი ჩაუყარა გამოთვლისა და ინტელექტის თეორიულ გაგებას.',
+    },
+    {
+      topic: 'ხელოვნური ინტელექტის მიზანი',
+      info: 'vucidt ilikos'
+    },
+  ];
 }

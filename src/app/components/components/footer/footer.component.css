@@ -1,0 +1,20 @@
+.li-widget::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: cyan;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.authors-widget::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: cyan;
+    margin-right: 10px;
+    border-radius: 50%;
+    transform: translateY(-5px);
+}

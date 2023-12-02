@@ -9,7 +9,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ModalTemplateComponent {
 
   // Inputting variable from home component
-  
+  @Input() title: any;
+  @Input() information: any;
   @Input() isHiddenCApplied = false || true;
 
   // Emitting events for modals

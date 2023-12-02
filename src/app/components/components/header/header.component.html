@@ -1,8 +1,8 @@
 <header
-  class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl lg:bg-transparent"
+  class="mx-auto max-w-full lg:bg-transparent border-b-[0.25px] border-b-[#05ffff]"
 >
   <nav
-    class="w-full flex justify-between items-center px-12 py-4 relative navbar border-b-[0.25px] border-b-[#05ffff]"
+    class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full flex justify-between items-center px-12 py-4 relative navbar"
   >
     <div class="flex justify-center items-center">
       <div class=" sm:px-8">
@@ -16,13 +16,13 @@
         class="px-8 md:px-16 lg:px-28 flex justify-between items-center md:gap-x-16 lg:gap-x-32"
       >
         <li>
-          <a href="#" class="active">{{ "მთავარი" }}</a>
+          <a href="#" class="active" routerLink="/home">{{ "მთავარი" }}</a>
         </li>
         <li>
-          <a href="#" class="link">{{ "წყაროები" }}</a>
+          <a href="#" class="link" routerLink="/sources">{{ "წყაროები" }}</a>
         </li>
         <li>
-          <a href="#" class="link">{{ "ჩვენს შესახებ" }}</a>
+          <a href="#" class="link" routerLink="/about-us">{{ "ჩვენს შესახებ" }}</a>
         </li>
       </ul>
     </div>
@@ -43,13 +43,13 @@
         class="text-xl font-bold px-8 py-4 md:px-16 lg:px-28 flex flex-col justify-between items-center gap-4"
       >
         <li class="border-b-2 w-full py-4 border-white li-shadow">
-          <a href="#" class="link">{{ "მთავარი" }}</a>
+          <a href="#" class="link" routerLink="/home">{{ "მთავარი" }}</a>
         </li>
         <li class="border-b-2 w-full py-4 border-white li-shadow">
-          <a href="#" class="link">{{ "წყაროები" }}</a>
+          <a href="#" class="link" routerLink="/sources">{{ "წყაროები" }}</a>
         </li>
         <li class="border-b-2 w-full py-4 border-white li-shadow">
-          <a href="#" class="link">{{ "ჩვენს შესახებ" }}</a>
+          <a href="#" class="link" routerLink="/about-us">{{ "ჩვენს შესახებ" }}</a>
         </li>
       </ul>
     </div>
