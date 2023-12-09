@@ -1,11 +1,11 @@
-.bg-div{
+.bg-div {
     background-image: url(../../../../assets/images/ai-photo.jpg);
     background-repeat: no-repeat;
     background-position: bottom right;
     height: 100%;
     position: relative;
 }
-.p-line::before{
+.p-line::before {
     content: '';
     display: inline-block;
     width: 10px;
@@ -14,4 +14,13 @@
     margin-right: 10px;
     border-radius: 50%;
     transform: translateY(-5px);
+}
+
+.carousel {
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 0 24px;
+}
+
+.carousel .item { 
+    scroll-snap-align: start;
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-analytics',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./analytics.component.css']
 })
 export class AnalyticsComponent {
-
+  ngOnInit(): void {
+    initFlowbite();
+    };
 }
