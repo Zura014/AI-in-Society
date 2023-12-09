@@ -9,7 +9,7 @@ import { HeaderComponent } from './components/components/header/header.component
 import { FooterComponent } from './components/components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/pages/home/home.component';
-import { SourcesComponent } from './components/pages/sources/sources.component';
+import { AnalyticsComponent } from './components/pages/analytics/analytics.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { ModalTemplateComponent } from './components/components/modal-template/modal-template.component';
 import { CardsComponent } from './components/components/cards/cards.component'
@@ -20,7 +20,7 @@ import { CardsComponent } from './components/components/cards/cards.component'
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    SourcesComponent,
+    AnalyticsComponent,
     AboutUsComponent,
     ModalTemplateComponent,
     CardsComponent,
