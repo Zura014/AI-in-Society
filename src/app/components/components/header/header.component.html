@@ -1,9 +1,6 @@
-<header
-  class="mx-auto max-w-full lg:bg-transparent border-b-[0.25px] border-b-[#05ffff]"
->
+<header class="mx-auto max-w-full lg:bg-transparent border-b-[0.25px] border-b-[#05ffff]">
   <nav
-    class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full flex justify-between items-center px-12 py-4 relative navbar"
-  >
+    class="mx-auto max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl w-full flex justify-between items-center px-12 py-4 relative navbar">
     <div class="flex justify-center items-center">
       <div class=" sm:px-8">
         <a href="#" routerLink="/home" class=" ">
@@ -12,9 +9,7 @@
       </div>
     </div>
     <div class="hidden md:flex justify-center items-center text-white">
-      <ul
-        class="px-8 md:px-16 lg:px-28 flex justify-between items-center md:gap-x-16 lg:gap-x-32"
-      >
+      <ul class="px-8 md:px-16 lg:px-28 flex justify-between items-center md:gap-x-16 lg:gap-x-32">
         <li>
           <a href="#" class="active" routerLink="/home">{{ "მთავარი" }}</a>
         </li>
@@ -26,32 +21,31 @@
         </li>
       </ul>
     </div>
-    <div
-      class="hamburger flex scale-125 md:hidden"
-      (click)="toggleBM()"
-      [ngClass]="{ open: isClickedBM }"
-    >
+    <div class="hamburger flex scale-125 md:hidden" (click)="toggleBM()" [ngClass]="{ open: isClickedBM }">
       <span class="hamburger-top"></span>
       <span class="hamburger-mid"></span>
       <span class="hamburger-btm"></span>
     </div>
     <div
       class="scale-y-1 bg-[#01102d] z-20 origin-top text-white duration-300 absolute top-32 w-[90%] left-1/2 -translate-x-1/2 text-center drop-shadow-md"
-      [ngClass]="{ 'scale-y-0': !isClickedBM }"
-    >
-      <ul
-        class="text-xl px-8 py-4 md:px-16 lg:px-28 flex flex-col justify-between items-center gap-4"
-      >
-        <li class="border-b-2 w-full py-4 border-white li-shadow">
-          <a href="#" class="link" routerLink="/home">{{ "მთავარი" }}</a>
-        </li>
-        <li class="border-b-2 w-full py-4 border-white li-shadow">
-          <a href="#" class="link" routerLink="/analytics">{{ "გამოკითხვა" }}</a>
-        </li>
-        <li class="border-b-2 w-full py-4 border-white li-shadow">
-          <a href="#" class="link" routerLink="/about-us">{{ "ჩვენს შესახებ" }}</a>
-        </li>
-      </ul>
+      [ngClass]="{ 'scale-y-0': !isClickedBM }">
+      <div class="text-xl px-8 py-4 md:px-16 lg:px-28 flex flex-col justify-between items-center gap-4">
+        <a href="#" class="link w-full" routerLink="/home">
+          <div class="border-b-2 w-full py-4 border-white li-shadow">
+            {{ "მთავარი" }}
+          </div>
+        </a>
+        <a href="#" class="link w-full" routerLink="/analytics">
+          <div class="border-b-2 w-full py-4 border-white li-shadow">
+            {{ "გამოკითხვა" }}
+          </div>
+        </a>
+        <a href="#" class="link w-full" routerLink="/about-us">
+          <div class="border-b-2 w-full py-4 border-white li-shadow">
+            {{ "ჩვენს შესახებ" }}
+          </div>
+        </a>
+      </div>
     </div>
   </nav>
 </header>
