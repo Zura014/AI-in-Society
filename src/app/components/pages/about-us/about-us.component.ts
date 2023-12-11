@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -7,7 +7,18 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
+  avtorebi: string[] = [
+    'ნიკა ბუკია',
+    'ნიკოლოზ ფირანაშვილი',
+    'გიორგი დევიძე',
+    'მათე კუდაშვილი',
+    'მიქიაშვილი ილია',
+    'ზურაბ გაგნიძე',
+    'გუგა მუჩიაშვილი'
+  ];
+
   ngOnInit(): void {
     initFlowbite();
     };
+  
 }

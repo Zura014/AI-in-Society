@@ -1,50 +1,36 @@
-<section
-  class="bg-cover bg-center h-[450px] flex flex-col items-center justify-center"
-  style="
+<section class="bg-cover bg-center h-[450px] flex flex-col items-center justify-center" style="
     background-image: url('../assets/images/ai-photo.jpg');
     background-attachment: fixed;
-  "
->
-  <div
-    class="flex flex-col items-center justify-center p-6 space-y-4 md:space-y-2"
-  >
-    <h1
-      class="text-2xl xs:text-3xl sm:text-5xl md:text-7xl font-bold mb-16 text-cyan-100"
-    >
+  ">
+  <div class="flex flex-col items-center justify-center p-6 space-y-4 md:space-y-2">
+    <h1 class="text-2xl xs:text-3xl sm:text-5xl md:text-7xl font-bold mb-16 text-cyan-100">
       ჩვენს შესახებ
     </h1>
   </div>
 </section>
 <section class="bg-[#01102d] border-t-[#05ffff] border-t-[0.25px]">
-  <div
-    class="container flex flex-col md:flex-row items-center justify-center px-6 mx-auto space-y-0"
-  >
-    <div
-      class="flex flex-col mb-32 space-y-12 md:1/2 pt-32 text-center items-center justify-center"
-    >
-      <p
-        class="max-w-xl lg:max-w-full text-center text-lg xs:text-xl sm:text-xl md:text-2xl text-cyan-100 font-bold"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit
-        illo esse adipisci molestias ipsam numquam a, repudiandae magnam,
-        mollitia voluptatum fugit rem minus animi voluptas! Dignissimos cumque
-        maxime repellat?
+  <div class="container flex flex-col md:flex-row items-center justify-center px-6 mx-auto space-y-0">
+    <div class="flex flex-col mb-32 space-y-12 md:1/2 pt-32 text-center items-center justify-center">
+      <p class="max-w-xl lg:max-w-full text-center text-lg xs:text-xl sm:text-xl md:text-2xl text-cyan-100 font-semibold">
+        Ჩვენ ვართ გუნდი, რომელიც მრავალნაირად ცდილობს განვითარებას სხვადასხვა მიმართულებით. ყოველდღიურად ვსწავლობთ
+        ახალს, ვვითარდებით და ვცდილობთ გამოვადგეთ საკუთარ თავებს, ჩვენს სკოლასა და მომავალში უკვე საზოგადოებას. Მრავალ
+        აქტივობაში ვიღებთ მონაწილეობას და მეტიც თავადვე ვცდილობთ რაიმე ახლის, საინტერესო და გამოსადეგარი პროექტის
+        შექმნას , მაგალითად როგორიცაა “ხელოვნური ინტელექტი საზოგადოებაში”.
+
       </p>
-      <p
-        class="max-w-xl lg:max-w-full text-center text-lg xs:text-xl sm:text-xl md:text-2xl text-cyan-100 font-bold"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit
-        illo esse adipisci molestias ipsam numquam a, repudiandae magnam,
-        mollitia voluptatum fugit rem minus animi voluptas! Dignissimos cumque
-        maxime repellat?
-      </p>
-      <p
-        class="max-w-xl lg:max-w-full text-center text-lg xs:text-xl sm:text-xl md:text-2xl text-cyan-100 font-bold"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit
-        illo esse adipisci molestias ipsam numquam a, repudiandae magnam,
-        mollitia voluptatum fugit rem minus animi voluptas! Dignissimos cumque
-        maxime repellat?
+      <p class="max-w-xl lg:max-w-full text-center text-lg xs:text-xl sm:text-xl md:text-2xl text-cyan-100 font-semibold">
+        <div class="text-cyan-100">
+          <h1 class="text-2xl pb-2 border-b border-cyan-300">Ამ და მომავალში კიდევ ბევრი პროექტის ავტორები არიან: </h1>
+          <div class="pt-4 text-start flex flex-col items-center">
+            <ul>
+              <li class="li-widget" *ngFor="let author of avtorebi">{{ author }}</li>
+            </ul>
+          </div>
+      </div>
+
+        
+      <p class="max-w-xl lg:max-w-full text-center text-lg xs:text-xl sm:text-xl md:text-2xl text-cyan-100 font-bold">
+        157-ე საჯარო სკოლის 10ა კლასი
       </p>
     </div>
   </div>

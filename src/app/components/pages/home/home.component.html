@@ -96,46 +96,42 @@
     </div>
 
     <!-- Carousel -->
-    <div class="mx-auto flex flex-col relative justify-center h-[400px] sm:h-[450px] md:h-[550px] lg:h-[600px] md:max-w-screen-lg lg:max-w-screen-xl items-center lg:space-y-0 xl:px-36 pb-36 pt-2 lg:px-16 max-w-full sm:max-w-screen-md">
+    <div
+        class="mx-auto flex flex-col relative justify-center h-[800px] max-h-[1200px] sm:h-[800px] md:h-[900px] lg:h-[600px] md:max-w-screen-lg lg:max-w-screen-xl items-center lg:space-y-0 xl:px-36 pb-36 pt-2 sm:px-24 px-4 lg:px-16 max-w-full sm:max-w-screen-md">
         <!-- Container -->
         <div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="relative h-full overflow-hidden rounded-lg">
                 <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="../../../../assets/images/Chat-GPT.png"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    <div class="absolute block right-0 top-0 shadow-effect xs:drop-shadow-2xl pl-36  w-1/2 h-full">
-                        vax to  
-                    </div>
+                <div class="hidden z-30 duration-700 ease-in-out" data-carousel-item="active">
+                    <app-carousel-item [aiInfo]="aiInfo[0]"></app-carousel-item>
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="../../../../assets/images/midjourney.png"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="hidden z-30 duration-700 ease-in-out" data-carousel-item>
+                   <app-carousel-item [aiInfo]="aiInfo[1]"></app-carousel-item>
                 </div>
                 <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="../../../../assets/images/Chat-GPT.png"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="hidden z-30 duration-700 ease-in-out" data-carousel-item>
+                    <app-carousel-item [aiInfo]="aiInfo[2]"></app-carousel-item>
                 </div>
             </div>
             <!-- Slider indicators -->
-            <div class="absolute z-30 hidden sm:flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-3 sm:bottom-5 left-1/2">
-                <button type="button" class="ml-3.5 w-2 h-2 md:w-3 md:h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-                <button type="button" class="w-2 h-2 md:w-3 md:h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                <button type="button" class="w-2 h-2 md:w-3 md:h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
+            <div
+                class="absolute z-30 hidden sm:flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-3 sm:bottom-5 left-1/2">
+                <button type="button" class="ml-3.5 w-2 h-2 md:w-3 md:h-3 rounded-full" aria-current="true"
+                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-2 h-2 md:w-3 md:h-3 rounded-full" aria-current="false"
+                    aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-2 h-2 md:w-3 md:h-3 rounded-full" aria-current="false"
+                    aria-label="Slide 3" data-carousel-slide-to="2"></button>
             </div>
             <!-- Slider controls -->
             <button type="button"
-                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                class="absolute opacity-30 sm:opacity-100 top-0 start-0 sm:-start-16 md:start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
                 <span
-                    class="inline-flex items-center justify-center w-5 h-5 md:w-10 md:h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-2 h-2 md:w-4 md:h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full drops-hadow-2xl shadow-2xl bg-black/30 dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M5 1 1 5l4 4" />
@@ -144,11 +140,11 @@
                 </span>
             </button>
             <button type="button"
-                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                class="absolute opacity-30 sm:opacity-100 top-0 end-0 sm:-end-16 md:end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-next>
                 <span
-                    class="inline-flex items-center justify-center w-5 h-5 md:w-10 md:h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-2 h-2 md:w-4 md:h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50 md:bg-white/30 dark:bg-gray-800/30 md:group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />

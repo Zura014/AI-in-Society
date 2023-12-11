@@ -1,0 +1,27 @@
+
+    <img [src]="aiInfo.imageUrl"
+        class="absolute hidden lg:block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        alt="...">
+    <div
+        class="absolute hidden lg:flex flex-col gap-y-2 items-center justify-center text-xs lg:text-sm right-0 top-0 shadow-effect xs:drop-shadow-2xl pl-60 pr-12 w-3/4 h-full">
+        <p class="text-cyan-100">
+            {{ aiInfo.info }}
+        </p>
+    </div>
+
+    <!-- Responsive -->
+    <div
+        class="lg:hidden flex flex-col rounded-xl w-full border border-cyan-300 text-cyan-300 bg-[#01102d] h-full">
+        <div
+            class="flex justify-center items-center relative h-[calc(60%+2rem)]  overflow-hidden w-full px-6 py-6">
+            <img [src]="aiInfo.logoUrl"
+                class="rounded-xl h-full object-cover" alt="...">
+        </div>
+        <div class="h-[calc(100%-(60%+2rem))] flex justify-center items-center">
+            <button type="button" (click)="applyHClass()"
+                class="md:py-4 px-2 sm:px-8 py-4 lg:px-8 lg:py-4 rounded-lg hover:border-[#01102d] hover:bg-cyan-300 hover:text-[#01102d] duration-500 border-solid li-shadow text-cyan-300 bg-[#01102d]">
+                იხილეთ ინფორმაცია
+            </button>
+        </div>
+    </div>
+<app-modal-template (hideEl)="applyHClass()" [information]="aiInfo.info" [title]="aiInfo.topic" [ngClass]="{'hidden': !isHiddenCApplied}"></app-modal-template>

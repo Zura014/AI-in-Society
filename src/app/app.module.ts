@@ -13,6 +13,7 @@ import { AnalyticsComponent } from './components/pages/analytics/analytics.compo
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { ModalTemplateComponent } from './components/components/modal-template/modal-template.component';
 import { CardsComponent } from './components/components/cards/cards.component'
+import { CarouselItemComponent } from './components/components/carousel-item/carousel-item.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CardsComponent } from './components/components/cards/cards.component'
     AboutUsComponent,
     ModalTemplateComponent,
     CardsComponent,
+    CarouselItemComponent
   ],
   imports: [
     BrowserModule,

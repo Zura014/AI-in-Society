@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Card } from '../../components/cards/cardTemplate/Card';
 import { initFlowbite } from 'flowbite';
+import { CarouselC } from '../../components/carousel-item/carouselTemplate/Carousel';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,28 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
+  isHiddenCApplied = false;
+
+  aiInfo: CarouselC[] = [
+      {
+        topic: 'ChatGPT',
+        info: 'ChatGPT ორგანიზაცია OpenAI-ის პროექტია, რომელიც წარმოადგენს ერთგვარ მცდელობას, რომ ხელოვნურ ინტელექტთან საუბარი ბუნებრივი, უფრო ზუსტად კი — ადამიანური გახდეს. მომხმარებლებს შეუძლიათ, მყისიერი შეტყობინებების სახით, ბოტს სხვადასხვა კითხვა დაუსვან, ხოლო იგი სრული წინადადებებით უპასუხებს კითხვებს და ეცდება, საუბრის რიტმს მიბაძოს. თუმცა, არ გეგონოთ, რომ ChatGPT-ს ხასიათი ან რაიმე პიროვნული თვისებები აქვს; ის ადამიანებთან კომუნიკაციისთვის მრავალი წყაროდან შეგროვებულ ინფორმაციას იყენებს. შესაბამისად, თუკი ბოტს ჰკითხავთ, თავს როგორ გრძნობთ იგი გიპასუხებთ, რომ როგორც მანქანური სწავლების მოდელს, მას გრძნობები არ გააჩნია და შექმნილია მხოლოდ და მხოლოდ ტექსტის დამუშავებისა და გენერირებისთვის.',
+        imageUrl: '../../../../assets/images/Chat-GPT.png',
+        logoUrl: '../../../../assets/images/Chat-GPT-logo.png'
+      },
+      {
+        topic: 'Midjourney',
+        info: 'Midjourney AI-art არის ახალი ხელოვნური ინტელექტი, რომელიც დაგეხმარებათ, ფანტაზია რეალობად აქციოთ. ის ნახატებს ტექსტის საშუალებით ქმნის. თქვენ აძლევთ მას საკვანძო სიტყვებს, ის აგროვებს ინფორმაციას და ქმნის სურათს. ეს არის ახალი შესაძლებლობა ხელოვნების სამყაროსთვის.',
+        imageUrl: '../../../../assets/images/midjourney.png', 
+        logoUrl: '../../../../assets/images/midjourney-logo.png'
+      },
+      {
+        topic: 'Google Translate',
+        info: 'Google Translate — Google-ის ვებ-სერვისი, რომელიც განკუთვნილია ტექტის ნაწილის ან საიტის თარგმნისთვის სხვა ენაზე. სისტემას აქვს აგრეთვე ფუნქცია, რომელიც ახმოვანებს ტექსტს. Google Translate-ში მხარდაჭერილია 133 ენა, მათ შორისაა ქართული.',
+        imageUrl: '../../../../assets/images/google-translate.png',
+        logoUrl: '../../../../assets/images/google-translate-logo.png'
+      }
+  ];
 
   cards: Card[] = [
     {
@@ -22,4 +45,8 @@ export class HomeComponent {
   ngOnInit(): void {
     initFlowbite();
     };
+
+  applyHClass() {
+    this.isHiddenCApplied = !this.isHiddenCApplied;
+  }
 }
